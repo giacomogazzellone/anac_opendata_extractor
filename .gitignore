@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.env
+*.venv/
+*.log
+*.pkl
+*.csv
+*.tsv
+*.zip
+*.tar.gz
+*.rar
+*.7z
+.idea/
+.vscode/
