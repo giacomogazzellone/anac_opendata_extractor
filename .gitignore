@@ -1,14 +1,58 @@
+# --- DATA & OUTPUTS ---
+# Non carichiamo i dati grezzi o estratti. 
+# La filosofia è: "Condividi il codice per generare i dati, non i dati stessi".
+*.csv
+*.zip
+*.json
+*.xlsx
+/data/
+
+# --- PYTHON SETTINGS ---
+# File compilati e cache che appesantiscono la repo senza utilità
 __pycache__/
 *.py[cod]
-*.env
-*.venv/
-*.log
-*.pkl
-*.csv
-*.tsv
-*.zip
-*.tar.gz
-*.rar
-*.7z
-.idea/
-.vscode/
+*$py.class
+*.so
+.Python
+env/
+build/
+develop/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- JUPYTER NOTEBOOKS ---
+# Rimuove i file temporanei generati dai notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- ENV & SENSITIVE DATA ---
+# Mai caricare le proprie variabili d'ambiente (es. password o chiavi API)
+.env
+.venv
+venv/
+ENV/
+env.bak
+venv.bak
+
+# --- SYSTEM FILES ---
+# Spazzatura generata dai sistemi operativi
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
