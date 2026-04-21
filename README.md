@@ -11,6 +11,9 @@ This tool provides a **memory-efficient workflow** that:
 - **Cleans** financial variables (converting Italian-format currency strings into floats).
 - **Validates** schema headers automatically to handle year-over-year column changes.
 
+## Motivation
+
+These codes were used to construct the dataset for my PhD thesis - 'Public Budget and Collective Choices' - therefore they cover only part of the possible information that is provided by ANAC. I strongly engourage anyone to reach out for collaborations and further developments of this code or related to this work.
 
 ## Installation
 Ensure you have Python 3.8+ installed. Clone this repository and install the dependencies:
