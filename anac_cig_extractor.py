@@ -85,7 +85,7 @@ def run_anac_extraction(config):
     print(f"\n--- Process complete. Data saved in: {os.path.abspath(output_path)} ---")
 
 # ============================================================
-# CIG CONFIGURATION
+# CIG CONFIGURATION (the list of columns included in the dataset is available at the following link: https://dati.anticorruzione.it/opendata)
 # ============================================================
 
 user_configuration = {
