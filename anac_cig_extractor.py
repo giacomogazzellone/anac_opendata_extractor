@@ -85,17 +85,19 @@ def run_anac_extraction(config):
     print(f"\n--- Process complete. Data saved in: {os.path.abspath(output_path)} ---")
 
 # ============================================================
-# CONFIGURATION
+# CIG CONFIGURATION
 # ============================================================
 
 user_configuration = {
-    'start_year': 2020,
-    'end_year': 2023,
+    'start_year': 2020,                                                    # < --- CHOOSE START YEAR
+    'end_year': 2023,                                                      # < --- CHOOSE END YEAR
     # target_columns uses the official Italian field names from ANAC
-    'target_columns': ['cig', 'tipo_scelta_contraente', 'importo_lotto'], 
+    'target_columns': ['cig', 
+                       'tipo_scelta_contraente', 
+                       'importo_lotto'],                                   # < --- CHOOSE COLUMNS TO KEEP (strongly suggest to keep month, year, cig)
     # value_filters targets specific Italian categorical strings
-    'value_filters': {'tipo_scelta_contraente': 'PROCEDURA APERTA'},        
-    'output_filename': 'anac_extraction_2020_2023.csv',
+    'value_filters': {'tipo_scelta_contraente': 'PROCEDURA APERTA'},       # < --- CHOOSE FILTERS,  Leave empty to get all procedures 
+    'output_filename': 'anac_extraction_2020_2023.csv',                    # < --- SAVE AND RENAME FILE
     'clean_amounts': True,
     'amount_column': 'importo_lotto'
 }
