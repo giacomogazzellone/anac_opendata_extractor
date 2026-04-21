@@ -11,6 +11,18 @@ This tool provides a **memory-efficient workflow** that:
 - **Cleans** financial variables (converting Italian-format currency strings into floats).
 - **Validates** schema headers automatically to handle year-over-year column changes.
 
+## Construction
+anac_opendata_extractor/
+├── scripts/
+│   ├── extract_cig.py          # Script specifico per CIG
+│   ├── extract_smartcig.py     # Script specifico per SmartCIG
+│   └── extract_delibere.py     # Script specifico per Delibere
+├── utils/
+│   └── data_utils.py           # Funzioni comuni (es. clean_currency)
+├── .gitignore
+├── README.md
+└── requirements.txt
+
 ## Installation
 Ensure you have Python 3.8+ installed. Clone this repository and install the dependencies:
 ```bash
