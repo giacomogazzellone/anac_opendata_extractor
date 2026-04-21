@@ -1,5 +1,5 @@
 # Replicability Script: ANAC (Italian Anti-Corruption Authority) Open Data Extraction
-# Author: [Your Name/Research Unit]
+# Author: Giacomo Gazzellone, Phd - Roma tre University
 # Description: This script automates the retrieval, filtering, and cleaning of 
 # CIG (Codice Identificativo Gara) datasets from the official ANAC portal.
 
