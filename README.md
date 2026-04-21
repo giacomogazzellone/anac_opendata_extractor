@@ -14,6 +14,11 @@ This tool provides a **memory-efficient workflow** that:
 ## Installation
 Ensure you have Python 3.8+ installed. Clone this repository and install the dependencies:
 ```bash
-git clone [https://github.com/giacomogazzellone/anac-extractor.git](https://github.com/giacomogazzellone/anac-extractor.git)
-cd anac-extractor
+# Clone the repository
+git clone https://github.com/giacomogazzellone/anac_opendata_extractor.git
+
+# Enter the directory
+cd anac_opendata_extractor
+
+# Install dependencies
 pip install -r requirements.txt
