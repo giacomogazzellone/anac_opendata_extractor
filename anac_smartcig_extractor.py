@@ -85,11 +85,14 @@ def run_smartcig_extraction(config):
 # ============================================================
 
 smartcig_configuration = {
-    'start_year': 2021,     # < --- CHOOSE START YEAR
-    'end_year': 2023,       # < --- CHOOSE END YEAR
-    'target_columns': ['smart_cig', 'oggetto_lotto', 'importo_lotto', 'denominazione_stazione_appaltante'], # < --- CHOOSE COLUMNS TO KEEP (strongly suggest to keep month, year, cig)
-    'value_filters': {},    # < --- CHOOSE FILTERS,  Leave empty to get all procedures
-    'output_filename': 'smartcig_extraction_2021_2023.csv',  # < --- SAVE AND RENAME FILE
+    'start_year': 2021,                                                 # < --- CHOOSE START YEAR
+    'end_year': 2023,                                                   # < --- CHOOSE END YEAR
+    'target_columns': ['smart_cig', 
+                       'oggetto_lotto', 
+                       'importo_lotto', 
+                       'denominazione_stazione_appaltante'],            # < --- CHOOSE COLUMNS TO KEEP (strongly suggest to keep month, year, cig)
+    'value_filters': {},                                                # < --- CHOOSE FILTERS,  Leave empty to get all procedures
+    'output_filename': 'smartcig_extraction_2021_2023.csv',             # < --- SAVE AND RENAME FILE
     'clean_amounts': True,
     'amount_column': 'importo_lotto'
 }
